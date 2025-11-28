@@ -55,7 +55,7 @@ notebook
 
 1. Clone the repo (see the section below for uploading to GitHub; or if you already cloned):
    ```bash
-   git clone (https://github.com/justutsav/Brain-Tumor-Scanning.git)
+   git clone https://github.com/justutsav/Brain-Tumor-Scanning.git
    cd Brain-Tumor-Scanning
    ```
 2. Create and activate a virtual environment:
