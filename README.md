@@ -76,40 +76,11 @@ notebook
 
 ### Using Google Colab
 
-If you prefer Colab, upload `exp_learning.ipynb` and the image files to Colab (or mount Google Drive) and run the notebook there. You may need to change the image path to match the Colab working directory (e.g., `/content/BrainTumor.jpg`).
+If you prefer Colab, upload `exp_learning.ipynb` and the image files to Colab (or mount Google Drive) and run the notebook there. 
+You may need to change the image path to match the Colab working directory (e.g., `/content/BrainTumor.jpg`).
 
 ---
 
-## Suggestions & Improvements (next steps)
-
-- Use standard segmentation methods for better accuracy:
-  - Otsu thresholding, adaptive thresholding, Canny edge detection.
-  - Morphological operations (open, close) to remove noise.
-  - Watershed algorithm to split touching regions.
-- Evaluate region proposals using contour area and circularity; compute bounding box and overlay on original image.
-- If building a classifier: gather labeled dataset (MRI scans with tumor masks). Train a U-Net or a small CNN for semantic segmentation or classification.
-- Add unit tests for core helper functions, and refactor repeated code into a Python module (e.g., `processing.py`) so the notebook imports functions instead of re-defining them.
-- Save processed masks and visualizations to a `results/` folder automatically.
-- Add clear kernel/system info at top and remove duplicated/unused cells for a clean final notebook.
-
----
-
-## Notes about publishing the notebook to GitHub
-
-- Clear large cell outputs before committing to keep repo size small (in Jupyter: `Edit -> Clear All Outputs`). Optionally use `nbstripout` to remove outputs on commit.
-- Add a `.gitignore` to exclude virtual environments, `.ipynb_checkpoints`, and large data files if needed.
-- Consider adding an appropriate license (e.g., MIT) if you want to share the code publicly.
-
----
-
-## Reproducibility checklist
-
-- `exp_learning.ipynb` should reference the included `BrainTumor.jpg` or `BrainTumor.pnm` in the same folder.
-- If you change paths, update notebook cell(s) accordingly.
-- Confirm installed OpenCV uses the correct image-reading mode (grayscale vs BGR); the notebook uses grayscale images (PIL reveals mode 'L').
-
----
-
-## Contact / Author
-
-Your name (add here) — feel free to customize the README with project description and links to your portfolio or demo.
+## Contact
+Utsav
+justutsav.05@gmail.com
